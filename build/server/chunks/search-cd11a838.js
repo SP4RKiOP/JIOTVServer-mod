@@ -38,7 +38,7 @@ const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   };
   if ($$props.channel === void 0 && $$bindings.channel && channel !== void 0)
     $$bindings.channel(channel);
-  return `<a href="${"/play/" + escape(channel["channel_id"], true)}"${add_attribute("id", channel["channel_id"], 0)} data-sveltekit-preload-data="hover"><div class="card w-40 bg-gray-100 rounded-xl bg-base-100 shadow-lg h-48 mb-4 flex flex-col"><img src="${"https://jiotv.catchup.cdn.jio.com/dare_images/images/" + escape(channel["logoUrl"], true)}"${add_attribute("alt", channel["channel_name"], 0)} loading="lazy" class="h-28 mt-5 m-auto opacity-100">
+  return `<a href="${"/play/" + escape(channel["channel_id"], true)}"${add_attribute("id", channel["channel_id"], 0)} data-sveltekit-preload-data="hover"><div class="card w-40 bg-gray-100 rounded-xl bg-base-100 shadow-lg h-48 mb-4 flex flex-col" style="background-color: #A9A9A9;"><img src="${"https://jiotv.catchup.cdn.jio.com/dare_images/images/" + escape(channel["logoUrl"], true)}"${add_attribute("alt", channel["channel_name"], 0)} loading="lazy" class="h-28 mt-5 m-auto opacity-100">
 	<div class="mb-5 opacity-100"><h2 class="text-center text-sm font-bold">${escape(channel["channel_name"])}</h2>
 		<div class="flex justify-center space-x-1"><img src="/1.svg" alt="">
 			<p class="text-xs text-center">${escape(genreMap[channel["channelCategoryId"]])}</p>

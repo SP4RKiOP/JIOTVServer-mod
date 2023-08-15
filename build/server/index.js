@@ -107,7 +107,7 @@ const options = {
 		<meta name="viewport" content="width=device-width" />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-F033WLZ7K5"><\/script>
 		<script>window.dataLayer = window.dataLayer || [];function gtag() { dataLayer.push(arguments); }gtag('js', new Date());gtag('config', 'G-F033WLZ7K5');<\/script>
-		` + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+		` + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover" style="background-color: #202020;">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
