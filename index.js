@@ -64,9 +64,6 @@ app.use(handler);
 app.listen(PORT, () => {
   console.log("===================================================================");
   console.log(chalk.green("THIS SERVER IS 100% FREE. PLEASE DON'T PAY ANYONE."));
-  console.log(chalk.green("STRICT ACTION WILL BE TAKEN AGAINST THOSE WHO ARE SELLING THIS."));
-  console.log(chalk.green("IF ANYONE TRYING TO SELL IT, PLEASE REPORT IT ON OUR DISCORD SERVER\nhttps://discord.gg/suyzkCQKhC"));
-  console.log(chalk.green("Please Stare Repo https://github.com/dhruv-2015/JIOTVServer"));
   console.log(chalk.green("VERSION 2.8.6"));
     console.log(chalk.green("980+ CHANNELS AVAILABLE. MORE FEATURES WILL COME SOON. STAY TUNED"));
     console.log("===================================================================");

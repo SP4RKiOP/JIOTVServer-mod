@@ -5,7 +5,7 @@ const router = express.Router();
 const port = process.env.PORT || 3500;
 
 router.post("/ip", (req, res) => {
-  if (req.body.ip == "") return res.redirect("admin.html?error=ip not dound");
+  if (req.body.ip == "") return res.redirect("admin.html?error=ip not found");
   let ip = req.body.ip;
   fs["writeFileSync"]("./ipData.jiotv", ip);
   res.redirect("login.html?ipset=" + ip);

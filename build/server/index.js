@@ -112,7 +112,7 @@ const options = {
 
 		<style>
 			body {
-				--bg: white;
+				--bg: grey;
 				--fg: #222;
 				--divider: #ccc;
 				background: var(--bg);

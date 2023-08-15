@@ -20,7 +20,7 @@ router.get("/playlist", async (req, res) => {
   } else {
     ip = "127.0.0.1";
   }
-  const playlistData = await playlist(`${ip}:${PORT}`);
+  const playlistData = await playlist(`${ip}`);
   res.status(200).send(playlistData);
 });
 
@@ -40,7 +40,7 @@ router.get("/playlist/download", async (req, res) => {
     ip = "127.0.0.1";
   }
 
-  const playlistData = await playlist(`${ip}:${PORT}`);
+  const playlistData = await playlist(`${ip}`);
   res.status(200).send(playlistData);
 });
 
